@@ -25,6 +25,11 @@ where = ["src"]
 [project.scripts]
 power-notice-radar = "market_radar.cli:main"
 
+[project.urls]
+Homepage = "https://yycccc-cell.github.io/RAG-based-Electricity-Trading-Market-Information-Collection-and-Recognition-System/"
+Repository = "https://github.com/YYCCCC-cell/RAG-based-Electricity-Trading-Market-Information-Collection-and-Recognition-System"
+Documentation = "https://github.com/YYCCCC-cell/RAG-based-Electricity-Trading-Market-Information-Collection-and-Recognition-System/blob/main/docs/PRODUCT_DOCUMENTATION.md"
+
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
@@ -34,4 +39,5 @@ line-length = 100
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
+
 
