@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as follows."
+title: "RAG-based Electricity Trading Market Information Collection and Recognition System"
+type: software
+authors:
+  - family-names: "Yang"
+    given-names: "Yichen"
+version: 1.0.0
+date-released: 2026-10-03
+abstract: "Electricity-market notice collection, rule-based classification and citation-backed retrieval."
