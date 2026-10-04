@@ -32,7 +32,7 @@
       <article><span>来源覆盖</span><strong>1</strong><small>单中心 MVP</small></article>
     </section>
 
-    <p class="public-note"><strong>公开演示：</strong>当前页面使用固定的 100 条公开通知快照。分类与检索在本地运行，不会发送问题或交易信息。</p>
+    <p class="public-note"><strong>公开演示：</strong>固定的 100 条公开通知快照，不会自动抓取更新。分类结果预先计算；公开网站在浏览器中检索，本地 Python 模式由本机服务处理。未接入生成式模型，不执行交易。</p>
 
     <section class="panel ask-panel">
       <div>
@@ -61,7 +61,8 @@
       <div class="table-wrap"><table><thead><tr><th>日期</th><th>通知</th><th>分类</th><th>预警</th><th>解释</th></tr></thead><tbody id="rows"></tbody></table></div>
     </section>
   </main>
-  <footer>Public notice snapshot · Source records retained for verification · Check deadlines and attachments at the official source before action.</footer>
+  <footer>Public notice snapshot · Verify deadlines and attachments at the official source before action. · <a href="https://github.com/YYCCCC-cell/RAG-based-Electricity-Trading-Market-Information-Collection-and-Recognition-System" target="_blank" rel="noreferrer">Source code &amp; documentation</a></footer>
   <script src="./app.js"></script>
 </body>
 </html>
+
