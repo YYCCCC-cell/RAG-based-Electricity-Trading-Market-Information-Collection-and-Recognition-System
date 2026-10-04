@@ -39,37 +39,6 @@ The demo uses a fixed collection of 100 records. It does not refresh automatical
 
 The website and local tools use the same versioned records. The reported retrieval metrics below are produced by the Python evaluator; they are not a separate browser-performance benchmark.
 
-## Run locally
-
-Python 3.10 or later is required. The application uses the Python standard library and needs no API key.
-
-From the repository root:
-
-```bash
-python3 app.py
-```
-
-Open <http://127.0.0.1:8765>. Press `Ctrl+C` to stop the server. On Windows, use `py` if `python3` is unavailable.
-
-Other commands:
-
-```bash
-# Classify the snapshot and produce the digest
-python3 app.py run
-
-# Recompute the evaluation results
-python3 app.py evaluate
-
-# Retrieve cited excerpts
-python3 app.py ask "最近有哪些绿色电力交易安排？"
-
-# Fetch new notices separately from the evaluation snapshot
-python3 app.py crawl --limit 100 --output tmp/live_notices.csv
-
-# Check the repository and saved results
-python3 scripts/check_repository.py
-```
-
 ## Evaluation
 
 The included snapshot contains 44 latest notices, 36 market-training records and 20 rules or policy records. These sections provide different types of examples; their proportions do not represent the full source archive.
@@ -133,5 +102,4 @@ See [Reproducibility](docs/REPRODUCIBILITY.md) for Windows commands, expected ou
 
 The crawler reads public pages and metadata. It does not parse every attachment or QR-linked document. The retriever returns source excerpts rather than generated explanations. Users should verify dates, participant eligibility and later corrections at the official source before acting. The application does not submit bids or approve settlements.
 
-Maintainer: Yang Yichen.
 
