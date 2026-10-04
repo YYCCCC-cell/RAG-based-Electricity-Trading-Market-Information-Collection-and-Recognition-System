@@ -8,3 +8,6 @@ authors:
 version: 1.0.0
 date-released: 2026-10-03
 abstract: "Electricity-market notice collection, rule-based classification and citation-backed retrieval."
+repository-code: "https://github.com/YYCCCC-cell/RAG-based-Electricity-Trading-Market-Information-Collection-and-Recognition-System"
+url: "https://yycccc-cell.github.io/RAG-based-Electricity-Trading-Market-Information-Collection-and-Recognition-System/"
+
