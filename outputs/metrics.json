@@ -1,0 +1,296 @@
+{
+  "classification": {
+    "evaluated_documents": 100,
+    "label_status_counts": {
+      "development_draft": 100
+    },
+    "four_way_accuracy": 0.93,
+    "macro_f1": 0.93,
+    "per_category": {
+      "transaction_action": {
+        "support": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rules_policy": {
+        "support": 15,
+        "precision": 0.682,
+        "recall": 1.0,
+        "f1": 0.811
+      },
+      "results_settlement": {
+        "support": 32,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "service_other": {
+        "support": 43,
+        "precision": 1.0,
+        "recall": 0.837,
+        "f1": 0.911
+      }
+    },
+    "market_impacting": {
+      "tp": 57,
+      "fp": 7,
+      "tn": 36,
+      "fn": 0,
+      "precision": 0.891,
+      "recall": 1.0,
+      "f1": 0.942,
+      "specificity": 0.837,
+      "alerts_per_100_notices": 64.0
+    },
+    "classification_latency_ms_p50": 0.005,
+    "confusion_matrix": {
+      "transaction_action": {
+        "transaction_action": 10,
+        "rules_policy": 0,
+        "results_settlement": 0,
+        "service_other": 0
+      },
+      "rules_policy": {
+        "transaction_action": 0,
+        "rules_policy": 15,
+        "results_settlement": 0,
+        "service_other": 0
+      },
+      "results_settlement": {
+        "transaction_action": 0,
+        "rules_policy": 0,
+        "results_settlement": 32,
+        "service_other": 0
+      },
+      "service_other": {
+        "transaction_action": 0,
+        "rules_policy": 7,
+        "results_settlement": 0,
+        "service_other": 36
+      }
+    },
+    "baselines": {
+      "flag_everything": {
+        "precision": 0.57,
+        "recall": 1.0,
+        "f1": 0.726,
+        "alerts": 100,
+        "false_alerts": 43
+      },
+      "always_majority_category": {
+        "accuracy": 0.43
+      }
+    },
+    "errors": [
+      {
+        "notice_id": "GZPEC-082",
+        "title": "广东电力市场规则",
+        "url": "http://www.gzpec.cn/law/jygz/202505/t20250516_34490.html",
+        "gold_category": "service_other",
+        "predicted_category": "rules_policy",
+        "gold_market_impacting": false,
+        "predicted_market_impacting": true,
+        "matched_rules": [
+          "规则"
+        ],
+        "label_status": "development_draft"
+      },
+      {
+        "notice_id": "GZPEC-085",
+        "title": "关于印发实施《广东电力市场交易信用评价评分细则（2025年版）》的通知",
+        "url": "http://www.gzpec.cn/law/jygz/202606/t20260629_36542.html",
+        "gold_category": "service_other",
+        "predicted_category": "rules_policy",
+        "gold_market_impacting": false,
+        "predicted_market_impacting": true,
+        "matched_rules": [
+          "细则"
+        ],
+        "label_status": "development_draft"
+      },
+      {
+        "notice_id": "GZPEC-093",
+        "title": "南方区域规则",
+        "url": "http://www.gzpec.cn/law/jygz/202505/t20250516_34496.html",
+        "gold_category": "service_other",
+        "predicted_category": "rules_policy",
+        "gold_market_impacting": false,
+        "predicted_market_impacting": true,
+        "matched_rules": [
+          "规则"
+        ],
+        "label_status": "development_draft"
+      },
+      {
+        "notice_id": "GZPEC-097",
+        "title": "国家发展改革委、国家能源局关于印发《电力中长期交易基本规则》的通知",
+        "url": "http://www.gzpec.cn/law/jygz/202505/t20250516_34493.html",
+        "gold_category": "service_other",
+        "predicted_category": "rules_policy",
+        "gold_market_impacting": false,
+        "predicted_market_impacting": true,
+        "matched_rules": [
+          "规则"
+        ],
+        "label_status": "development_draft"
+      },
+      {
+        "notice_id": "GZPEC-098",
+        "title": "发改能源规〔2023〕1217号 《电力现货市场基本规则（试行）》",
+        "url": "http://www.gzpec.cn/law/jygz/202502/t20250226_34120.html",
+        "gold_category": "service_other",
+        "predicted_category": "rules_policy",
+        "gold_market_impacting": false,
+        "predicted_market_impacting": true,
+        "matched_rules": [
+          "规则"
+        ],
+        "label_status": "development_draft"
+      },
+      {
+        "notice_id": "GZPEC-099",
+        "title": "第20号_中华人民共和国国家发展和改革委员会令（电力市场运行基本规则）",
+        "url": "http://www.gzpec.cn/law/jygz/202505/t20250516_34494.html",
+        "gold_category": "service_other",
+        "predicted_category": "rules_policy",
+        "gold_market_impacting": false,
+        "predicted_market_impacting": true,
+        "matched_rules": [
+          "规则"
+        ],
+        "label_status": "development_draft"
+      },
+      {
+        "notice_id": "GZPEC-100",
+        "title": "电力中长期交易基本规则—绿色电力交易专章",
+        "url": "http://www.gzpec.cn/law/jygz/202502/t20250226_34102.html",
+        "gold_category": "service_other",
+        "predicted_category": "rules_policy",
+        "gold_market_impacting": false,
+        "predicted_market_impacting": true,
+        "matched_rules": [
+          "规则"
+        ],
+        "label_status": "development_draft"
+      }
+    ]
+  },
+  "retrieval": {
+    "questions": 10,
+    "citation_hit_rate_at_1": 1.0,
+    "citation_hit_rate_at_3": 1.0,
+    "mean_reciprocal_rank": 1.0,
+    "retrieval_latency_ms_p50": 0.183,
+    "details": [
+      {
+        "question": "哪份通知征求绿色电力证书交易实施细则意见？",
+        "retrieved": [
+          "GZPEC-001",
+          "GZPEC-003",
+          "GZPEC-064"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "2026年跨省跨区年度交易什么时候开市？",
+        "retrieved": [
+          "GZPEC-004",
+          "GZPEC-002",
+          "GZPEC-056"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "2025年5月绿色电力认购交易结果在哪里？",
+        "retrieved": [
+          "GZPEC-005",
+          "GZPEC-007",
+          "GZPEC-010"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "哪份通知组织2025年6月绿色电力认购交易？",
+        "retrieved": [
+          "GZPEC-006",
+          "GZPEC-008",
+          "GZPEC-007"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "2025年4月绿色电力认购结果",
+        "retrieved": [
+          "GZPEC-007",
+          "GZPEC-010",
+          "GZPEC-011"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "2025年3月绿色电力认购交易如何报名？",
+        "retrieved": [
+          "GZPEC-012",
+          "GZPEC-013",
+          "GZPEC-010"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "南方区域跨省跨区连续交易结果",
+        "retrieved": [
+          "GZPEC-015",
+          "GZPEC-016",
+          "GZPEC-017"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "最新的绿证交易规则修编建议",
+        "retrieved": [
+          "GZPEC-003",
+          "GZPEC-073",
+          "GZPEC-051"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "按自然日连续组织中长期交易的公告",
+        "retrieved": [
+          "GZPEC-002",
+          "GZPEC-100",
+          "GZPEC-092"
+        ],
+        "rank": 1
+      },
+      {
+        "question": "2025年1月绿色电力认购交易结果",
+        "retrieved": [
+          "GZPEC-014",
+          "GZPEC-033",
+          "GZPEC-005"
+        ],
+        "rank": 1
+      }
+    ]
+  },
+  "cost": {
+    "notice_count": 100,
+    "offline_rules_and_bm25_usd_per_notice": 0.0,
+    "optional_llm_estimate_usd_per_notice": 0.000207,
+    "optional_llm_estimate_usd_total": 0.0207,
+    "scenario_inputs": {
+      "input_tokens_per_notice": 900,
+      "output_tokens_per_notice": 120,
+      "input_usd_per_million": 0.15,
+      "output_usd_per_million": 0.6
+    },
+    "assumption": "Example price inputs; replace with the chosen provider's current rates before production."
+  },
+  "crawl_sla": {
+    "target_minutes": 30,
+    "interpretation": "Elapsed time from source publication becoming observable to successful ingestion; not model latency.",
+    "status": "not measured by the offline snapshot"
+  }
+}

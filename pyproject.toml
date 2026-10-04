@@ -1,0 +1,37 @@
+[project]
+name = "power-notice-radar"
+version = "1.0.0"
+description = "Reproducible MVP for classifying and retrieving electricity-market notices"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+authors = [{name = "Yang Yichen"}]
+keywords = ["electricity-market", "information-retrieval", "classification", "rag"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+power-notice-radar = "market_radar.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
